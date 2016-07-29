@@ -69,21 +69,21 @@
     </div>
 </body>
 <script>
-  $('#lastm').on('change',function() {
+  $('#lastm').on('keyup',function() {
     var l = parseInt($("#lastm").val());
     var t = parseInt($("#thism").val());
     var diff = t-l;
     $("#degree").val(diff);
     counting();
   });
-  $('#thism').on('change',function() {
+  $('#thism').on('keyup',function() {
     var l = parseInt($("#lastm").val());
     var t = parseInt($("#thism").val());
     var diff = t-l;
     $("#degree").val(diff);
     counting();
   });
-  $('.counting').on('change',function() {
+  $('.counting').on('keyup',function() {
     counting();
   });
 
