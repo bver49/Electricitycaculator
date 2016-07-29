@@ -70,15 +70,14 @@
 </body>
 <script>
   $('#lastm').on('keyup',function() {
-    var l = parseInt($("#lastm").val());
-    var t = parseInt($("#thism").val());
+    var t = parseFloat($("#thism").val());
     var diff = t-l;
     $("#degree").val(diff);
     counting();
   });
   $('#thism').on('keyup',function() {
-    var l = parseInt($("#lastm").val());
-    var t = parseInt($("#thism").val());
+    var l = parseFloat($("#lastm").val());
+    var t = parseFloat($("#thism").val());
     var diff = t-l;
     $("#degree").val(diff);
     counting();
@@ -88,13 +87,13 @@
   });
 
   function counting() {
-    var degree = parseInt($("#degree").val());
+    var degree = parseFloat($("#degree").val());
     var price = 0;
     var fee = 0;
-    var A = parseInt($('input[name="A"]').val());
-    var B = parseInt($('input[name="B"]').val());
-    var C = parseInt($('input[name="C"]').val());
-    var D = parseInt($('input[name="D"]').val());
+    var A = parseFloat($('input[name="A"]').val());
+    var B = parseFloat($('input[name="B"]').val());
+    var C = parseFloat($('input[name="C"]').val());
+    var D = parseFloat($('input[name="D"]').val());
     switch (true) {
       case (degree <= 120):
         price = A;
