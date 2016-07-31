@@ -12,20 +12,18 @@ $(document).ready(function() {
   var B = 2.38;
   var C = 3.52;
   var D = 4.61;
+  var E = 5.42;
+  var F = 6.13;
 
-  $('#lastm').on('keyup', function() {
+  $('.month').on('keyup', function() {
     var t = parseFloat($("#thism").val());
-    var diff = t - l;
-    $("#degree").val(diff);
-    counting();
-  });
-  $('#thism').on('keyup', function() {
     var l = parseFloat($("#lastm").val());
-    var t = parseFloat($("#thism").val());
-    var diff = t - l;
+    var d = parseFloat($("#discount").val());
+    var diff = t - l - d ;
     $("#degree").val(diff);
     counting();
   });
+
   $('.counting').on('keyup', function() {
     counting();
   });
@@ -41,6 +39,9 @@ $(document).ready(function() {
     var cu = parseFloat($('input[name="CU"]').val());
     var dl = parseFloat($('input[name="DL"]').val());
     var du = parseFloat($('input[name="DU"]').val());
+    var el = parseFloat($('input[name="EL"]').val());
+    var eu = parseFloat($('input[name="EU"]').val());
+    var fl = parseFloat($('input[name="FL"]').val());
     switch (true) {
       case (degree <= au):
         fee = A * degree;
@@ -53,6 +54,12 @@ $(document).ready(function() {
         break;
       case (degree <= du && degree > cu):
         fee = A * (au) + B * (bu - au) + C * (cu - bu) + D * (degree - cu);
+        break;
+      case (degree <= eu && degree > du):
+        fee = A * (au) + B * (bu - au) + C * (cu - bu) + D * (du - cu)+ E * (degree - du);
+        break;
+      case (degree > eu):
+        fee = A * (au) + B * (bu - au) + C * (cu - bu) + D * (du - cu)+ E * (eu - du) + F * (degree - eu);
         break;
       default:
         fee = 0;
@@ -67,16 +74,22 @@ $(document).ready(function() {
       B = 2.10;
       C = 2.89;
       D = 3.79;
+      E = 4.42;
+      F = 4.83;
     } else {
       A = 1.63;
       B = 2.38;
       C = 3.52;
       D = 4.61;
+      E = 5.42;
+      F = 6.13;
     }
     $("#A").html(A);
     $("#B").html(B);
     $("#C").html(C);
     $("#D").html(D);
+    $("#E").html(E);
+    $("#F").html(F);
     counting();
   });
 });
