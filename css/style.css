@@ -70,6 +70,9 @@ html *{
 
 .ui.right.labeled .ui.label{
   width:60px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-bottom: 4px;
 }
 
 .column{
