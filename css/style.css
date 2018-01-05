@@ -68,7 +68,7 @@ html *{
   width:25%;
 }
 
-.ui .labeled .ui.label{
+.ui.labeled.input>.label:not(.corner){
   padding-top: 9px;
   padding-bottom: 9px;
   margin-bottom: 4px;
