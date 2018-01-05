@@ -86,11 +86,10 @@ html *{
   font-size:36px;
 }
 
-.counting{
+.ui.input input.counting{
   padding-top:5px;
   padding-bottom:5px;
 }
-
 
 /* Media query */
 
