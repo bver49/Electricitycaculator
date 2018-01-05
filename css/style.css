@@ -68,6 +68,12 @@ html *{
   width:25%;
 }
 
+.ui .labeled .ui.label{
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-bottom: 4px;
+}
+
 .ui.right.labeled .ui.label{
   width:60px;
   padding-top: 9px;
