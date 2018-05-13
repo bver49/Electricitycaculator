@@ -11,9 +11,9 @@ $(document).ready(function() {
   var A = 1.63;
   var B = 2.38;
   var C = 3.52;
-  var D = 4.61;
-  var E = 5.42;
-  var F = 6.13;
+  var D = 4.80;
+  var E = 5.66;
+  var F = 6.41;
 
   $('.month').on('keyup', function() {
     var t = parseFloat($("#thism").val());
@@ -73,16 +73,16 @@ $(document).ready(function() {
       A = 1.63;
       B = 2.10;
       C = 2.89;
-      D = 3.79;
-      E = 4.42;
-      F = 4.83;
+      D = 3.94;
+      E = 4.60;
+      F = 5.03;
     } else {
       A = 1.63;
       B = 2.38;
       C = 3.52;
-      D = 4.61;
-      E = 5.42;
-      F = 6.13;
+      D = 4.80;
+      E = 5.66;
+      F = 6.41;
     }
     $("#A").html(A);
     $("#B").html(B);
