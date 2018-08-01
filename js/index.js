@@ -65,7 +65,7 @@ $(document).ready(function() {
         fee = 0;
         break;
     }
-    fee = fee.toFixed(2);
+    fee = Math.round(fee);
     $('#fee').html(fee);
   }
   $('#check').on('click', function() {
