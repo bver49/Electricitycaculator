@@ -13,7 +13,7 @@ $(document).ready(function() {
   var C = 3.52;
   var D = 4.80;
   var E = 5.66;
-  var F = 6.41;
+  var F = 6.99;
 
   $('.month').on('keyup', function() {
     var t = parseFloat($("#thism").val());
@@ -75,14 +75,14 @@ $(document).ready(function() {
       C = 2.89;
       D = 3.94;
       E = 4.60;
-      F = 5.03;
+      F = 5.48;
     } else {
       A = 1.63;
       B = 2.38;
       C = 3.52;
       D = 4.80;
       E = 5.66;
-      F = 6.41;
+      F = 6.99;
     }
     $("#A").html(A);
     $("#B").html(B);
