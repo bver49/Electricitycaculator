@@ -67,6 +67,9 @@ $(document).ready(function() {
     }
     fee = Math.round(fee);
     $('#fee').html(fee);
+    other = parseFloat($('input[name="other"]').val())
+    $('#other').html(other);
+    $('#total').html((other + fee));
   }
   $('#check').on('click', function() {
     if (this.checked) {
