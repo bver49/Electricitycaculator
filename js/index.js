@@ -8,12 +8,12 @@ $(document).ready(function() {
     "timeOut": "3000",
     "extendedTimeOut": "1000"
   }
-  var A = 1.63;
-  var B = 2.38;
-  var C = 3.52;
-  var D = 4.80;
-  var E = 5.83;
-  var F = 7.69;
+  var A = 1.68;
+  var B = 2.45;
+  var C = 3.70;
+  var D = 5.04;
+  var E = 6.24;
+  var F = 8.46;
 
   $('.month').on('keyup', function() {
     var t = parseFloat($("#thism").val());
@@ -73,19 +73,19 @@ $(document).ready(function() {
   }
   $('#check').on('click', function() {
     if (this.checked) {
-      A = 1.63;
-      B = 2.10;
-      C = 2.89;
-      D = 3.94;
-      E = 4.74;
-      F = 6.03;
+      A = 1.68;
+      B = 2.16;
+      C = 3.03;
+      D = 4.14;
+      E = 5.07;
+      F = 6.63;
     } else {
-      A = 1.63;
-      B = 2.38;
-      C = 3.52;
-      D = 4.80;
-      E = 5.83;
-      F = 7.69;
+      A = 1.68;
+      B = 2.45;
+      C = 3.70;
+      D = 5.04;
+      E = 6.24;
+      F = 8.46;
     }
     $("#A").html(A);
     $("#B").html(B);
